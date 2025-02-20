@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add a New Book</title>
+</head>
+<body>
+  <h1>Add a New Book 📚</h1>
+
+  <form action="/books/add" method="POST" enctype="multipart/form-data">
+    <label>Title:</label>
+    <input type="text" name="title" required>
+
+    <label>Author:</label>
+    <input type="text" name="author" required>
+
+    <label>Department:</label>
+    <input type="text" name="department" required>
+
+    <label>Price:</label>
+    <input type="number" name="price" required>
+
+    <label>Stock:</label>
+    <input type="number" name="stock" value="1" required>
+
+    <label>Description:</label>
+    <textarea name="description"></textarea>
+
+    <label>Cover Image:</label>
+    <input type="file" name="coverImage" accept="image/*">
+
+    <button type="submit">Add Book</button>
+  </form>
+</body>
+</html>
